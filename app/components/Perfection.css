@@ -1,0 +1,103 @@
+/**** ANIMATIONS ****/
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.backButton {
+  position: absolute;
+}
+
+.counter {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 10rem;
+  font-weight: bold;
+  letter-spacing: -.025em;
+}
+
+.btnGroup {
+  position: relative;
+  top: 500px;
+  width: 480px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  opacity: .7;
+  cursor: pointer;
+  font-family: Arial, Helvetica, Helvetica Neue;
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table {
+  background-color: '#fff';
+  border-collapse: collapse;
+}
+
+tr.border_bottom td{
+  border-top: 1pt solid white;
+}
+
+.tableHeader {
+  font-size: 12px;
+}
+
+.tableBody {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+.refresh {
+  -moz-animation: rotate 0.5s infinite linear;
+  -webkit-animation: rotate 0.5s infinite linear;
+  animation: rotate 0.5s infinite linear;
+}
+
+.tableData {
+  border-top: 1px solid rgba(0, 0, 0, .15);
+  font-size: 13px;
+}
